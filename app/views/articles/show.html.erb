@@ -1,0 +1,10 @@
+<h1>Showing selected article</h1>
+<p>
+ Title: <%= @article.title %>
+</p>
+<p>
+ Description: <%= @article.description %>
+</p>
+<%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Edit", edit_article_path(@article) %>
+
