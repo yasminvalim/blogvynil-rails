@@ -1,3 +1,14 @@
-<h1>New Article</h1>
+
+<% if logged_in? %> 
+<h1 align="center">NEW ARTICLE</h1>
 <%= render 'form' %>
 <%= link_to 'Back', articles_path %>
+<%end%>
+<div align="center">
+<h1 align="center"> You can't write articles, please login or sign up!</h1>
+<br>
+<%= link_to "Login", login_path, class: "btn btn-lg btn-primary" %> 
+<br> <br>
+<%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %> 
+<div>
+
