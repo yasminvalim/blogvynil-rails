@@ -1,12 +1,9 @@
-
 <div class="jumbotron jumbotron-fluid">
-    <h3 align="center" class="display-6">ARTICLES</h3>
+  <h3 align="center" class="display-6">ARTICLES</h3>
 </div>
-<div>
+
 <%= render 'shared/articles', obj: @articles%>
+
 <div align="center">
-
   <%= paginate @articles %>
-
 </div>
-

@@ -6,5 +6,4 @@ class Article < ActiveRecord::Base
   validates :user_id, presence: true
 
   paginates_per 5
-
 end
