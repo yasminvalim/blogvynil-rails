@@ -6,7 +6,15 @@
     <h1 class="display-4" style="color: white">WELCOME TO VYNIL</h1>
     <h3 class="lead" style="color: white"></p>All you need is love...And a record player.
   </div>
+  <br>
+  <% unless logged_in? %>
+    <div align="center">
+    <small><%= link_to "LOGIN NOW ", login_path, class: "text-muted" %>     
+    <small  style="color: white"> or </small><%= link_to " REGISTER NOW", signup_path, class: "text-muted" %></small>
+  <% end %>
 </div>
+
+
 
 
 
