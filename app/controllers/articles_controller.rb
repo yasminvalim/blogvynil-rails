@@ -38,7 +38,8 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.all
+    @articles = Article.order(:name).page params[:page]
+
   end
 
   def destroy
