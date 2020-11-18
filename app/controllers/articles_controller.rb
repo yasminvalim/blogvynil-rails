@@ -38,7 +38,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.order(:name).page params[:page]
+    @articles = Article.order(created_at: :desc ).page params[:page]
 
   end
 

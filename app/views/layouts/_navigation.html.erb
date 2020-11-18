@@ -12,15 +12,19 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+  
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Articles", articles_path %></li>
+        <li><%= link_to "ABOUT", about_path %></li>
         <li class="dropdown">
           <ul class="nav navbar-nav">
-        <li><%= link_to "Create Article", new_article_path %></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
- <li><%= link_to "Creators", users_path %></li>        <li class="dropdown">
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          <li><%= link_to "ARTICLES", articles_path %></li>
+          <li class="dropdown">
+          <ul class="nav navbar-nav">
+          <li><%= link_to "CREATORS", users_path %></li>
+          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options<span class="caret"></span></a>
           <ul class="dropdown-menu">
           <% if logged_in? %>

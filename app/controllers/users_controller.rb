@@ -18,12 +18,12 @@ class UsersController < ApplicationController
  end
 
  def index
-  @users = User.paginate(page: params[:page], per_page: 5)
+  @users = User.order(:name).page params[:page]
 end
 
 def show
   @user = User.find(params[:id])
-  @user_articles = @user.articles.paginate(page: params[:page], per_page: 5)
+  @user_articles = @user.articles
  end
  def update
   @user = User.find(params[:id])

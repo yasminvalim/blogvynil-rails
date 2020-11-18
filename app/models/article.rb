@@ -5,6 +5,6 @@ class Article < ActiveRecord::Base
   validates :description, presence: true, length: { minimum: 100, maximum: 1000 }
   validates :user_id, presence: true
 
-  paginates_per 1
+  paginates_per 5
 
 end

@@ -1,4 +1,5 @@
 <h1 align="center">Our content creators!</h1>
+<br>
 <div align="center">
  
  <% @users.each do |user| %>
@@ -11,5 +12,7 @@
    </div>
   </ul>
  <% end %>
+
+ <%= paginate @users %>
 
 </div>
