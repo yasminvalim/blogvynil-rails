@@ -1,24 +1,8 @@
-# README
+<b> BLOG VYNIL</b> :musical_score:
+<hr>
+I made this project because I was curious about how to do a blog plataform using Rails, it was very fun and I learned a lot doing this. 
+<br>
+VYNIL a simple platform who permits to signup, post articles about music and records and read other people articles as well.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<br>
+:notes:	
